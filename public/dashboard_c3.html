@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<!-- ダッシュボード -->
+<title>Dashboard</title>
+<!-- Load c3.css -->
+<link href="./oss/c3.css" rel="stylesheet">
+
+<!-- Load d3.js and c3.js -->
+<!-- script src="./other/d3.js" charset="utf-8"></script -->
+<script src="./oss/jquery-3.3.1.js" charset="utf-8"></script>
+<script src="./oss/d3.js" charset="utf-8"></script>
+<script src="./oss/c3.js" charset="utf-8"></script>
+</head>
+<body>
+<h5>残高 - 収益</h5>
+<div id="chart"></div>
+<h5>選択</h5>
+<div id="selectPanel">
+<div>データ件数</div>
+<select id="dataNum">
+<option value="100" selected>100
+<option value="1000">1000
+<option value="10000">10000
+</select>
+<div>業種別</div>
+<select id="bizCategory">
+<option value="" selected>
+<option value="自動車">自動車
+<option value="金融">金融
+<option value="IT">IT
+</select>
+<div>地域別</div>
+<select id="area">
+<option value="" selected>
+<option value="関東">関東
+<option value="関西">関西
+<option value="東海">東海
+</select>
+</div>
+<div>グループ単位(別集計)</div>
+<select id="group">
+<option value="" selected>
+<option value="Aグループ">Aグループ
+<option value="Bグループ">Bグループ
+<option value="Cグループ">Cグループ
+</select>
+</div>
+<script src="./js/dashboard_c3.js" charset="utf-8"></script>
+</body>
+</html>
